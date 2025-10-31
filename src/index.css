@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* basic custom styles */
+html, body, #root { height: 100%; }
+.bg-gradient-brand { background: linear-gradient(180deg, #000000 0%, #0b0b0b 100%); }
