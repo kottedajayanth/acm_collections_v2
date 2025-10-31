@@ -2,6 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* basic custom styles */
-html, body, #root { height: 100%; }
-.bg-gradient-brand { background: linear-gradient(180deg, #000000 0%, #0b0b0b 100%); }
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌟 Premium White Text (default look) */
+.text-premium {
+  color: #ffffff;
+}
+
+/* 💚 Energetic Neon Glow (use only for slogans) */
+.text-neon-strong {
+  color: #00ff66;
+  text-shadow:
+    0 0 10px #00ff66,
+    0 0 20px #00ff66,
+    0 0 40px #00ff66,
+    0 0 80px #00ff66;
+}
+
+/* ✨ Optional: softer glow for icons or hover states */
+.text-neon-soft {
+  color: #00ff66;
+  text-shadow: 0 0 6px #00ff66, 0 0 15px #00ff66;
+}
+
+/* 🌀 Floating Animation */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* ⚡ Neon Flicker Animation (for realism) */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+
+.flicker {
+  animation: flicker 2s infinite;
+}
+
+/* 🔳 Button Glow */
+.shadow-neon {
+  box-shadow: 0 0 15px #00ff66, 0 0 25px #00ff66, 0 0 40px #00ff66;
+}
+
+/* 🛍️ Product Card Hover */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff66;
+}
